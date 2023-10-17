@@ -1,3 +1,4 @@
+import { ImArrowUpRight2 } from "react-icons/im";
 const AdviceCard = () => {
 	return (
 		<div className="w-full p-6 border-black border-[1px] rounded-[5px]">
@@ -13,7 +14,7 @@ const AdviceCard = () => {
 const Advice = () => {
 	return (
 		<section className="w-full h-auto py-12">
-			<div className="w-full flex  gap-12 h max-w-6xl mx-auto ">
+			<div className="w-full flex gap-12 h-auto max-w-6xl mx-auto ">
 				<article className="h-auto w-1/2">
 					<h3 className="w-full text-[48px] leading-[60px] font-semibold">Feed Your Inner Self Today. Look Into The MIRROR</h3>
 					<div className="w-[90%] mt-12 bg-slate-300 h-[300px] gap-12 items-center justify-between"></div>
@@ -23,8 +24,10 @@ const Advice = () => {
 						<AdviceCard key={index} />
 					))}
 					<div className="flex items-center justify-between w-full h-12 mt-auto">
-						<div className="w-8 h-8 rounded-full border-black border-[2px]"></div>
-						<p className="">See more</p>
+						<div className="w-8 h-8 rounded-full flex items-center justify-center border-black border-[2px]">
+							<ImArrowUpRight2 className="rotate-[270deg]" />
+						</div>
+						<p className="text-sm font-semibold">See more</p>
 					</div>
 				</div>
 			</div>

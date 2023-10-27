@@ -1,13 +1,13 @@
 import { ImArrowUpRight2 } from "react-icons/im";
+
+import advices from "../data/advices";
+
 import FeedInnerSelfImage from "../assets/feed-self.jpg";
-const AdviceCard = () => {
+const AdviceCard = ({ title, advice }: { title: string; advice: string }) => {
 	return (
 		<div className="w-full p-6 border-black border-[1px] rounded-[5px]">
-			<h3 className="text-black font-semibold text-xl">Visualize your ideal self and lifestyle</h3>
-			<p className="mt-4">
-				Understand that the ideal person is you and you alone. Your definition of self is what is right. Do not view yourself through the lens of others because you won’t get to see your real
-				self.{" "}
-			</p>
+			<h3 className="text-black font-semibold text-xl">{title}</h3>
+			<p className="mt-4">{advice}</p>
 		</div>
 	);
 };
@@ -23,8 +23,8 @@ const Advice = () => {
 					</div>
 				</article>
 				<div className="w-full md:w-1/2 flex flex-col gap-4 md:gap-8">
-					{[1, 2].map((advice, index) => (
-						<AdviceCard key={index} />
+					{advices.map((advice: { title: string; advice: string }, index) => (
+						<AdviceCard key={index} {...advice} />
 					))}
 					<div className="flex items-center justify-between w-full h-12 mt-0 md:mt-auto">
 						<div className="w-8 h-8 rounded-full flex items-center justify-center border-black border-[2px]">

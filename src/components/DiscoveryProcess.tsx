@@ -1,15 +1,14 @@
+import process from "../data/process";
+
 import { ImArrowUpRight2 } from "react-icons/im";
 
 import DiscoveryProcessImage from "../assets/process.jpg";
 
-const AdviceCard = () => {
+const AdviceCard = ({ title, desc }: { title: string; desc: string }) => {
 	return (
 		<div className="w-full p-4 md:p-6 border-black border-[1px] rounded-[5px]">
-			<h3 className="text-black font-semibold text-xl">Visualize your ideal self and lifestyle</h3>
-			<p className="mt-4">
-				Understand that the ideal person is you and you alone. Your definition of self is what is right. Do not view yourself through the lens of others because you won’t get to see your real
-				self.{" "}
-			</p>
+			<h3 className="text-black font-semibold text-xl">{title}</h3>
+			<p className="mt-4">{desc}</p>
 		</div>
 	);
 };
@@ -21,8 +20,8 @@ const DiscoveryProcess = () => {
 				<h3 className="w-full text-3xl md:text-[48px] md:leading-[60px] font-semibold">The Self Discovery Process</h3>
 				<div className="flex flex-col md:flex-row gap-12 mt-8 justify-between items-stretch">
 					<article className="w-full md:w-2/5 order-2 md:order-1 flex flex-col gap-8">
-						{[1, 2, 3].map((advice, index) => (
-							<AdviceCard key={index} />
+						{process.map((process: { title: string; desc: string }, index) => (
+							<AdviceCard key={index} {...process} />
 						))}
 					</article>
 					<article className="order-1 md:order-2 h-auto flex flex-col w-full md:w-1/2">

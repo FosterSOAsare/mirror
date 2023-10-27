@@ -5,7 +5,7 @@ import HeroImage from "../assets/hero-image.jpg";
 
 const Hero = () => {
 	return (
-		<section className="w-full h-auto px-4 py-6 md:py-12">
+		<section className="w-full h-auto px-6 py-6 md:py-12">
 			<div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row gap-6 md:gap-12 items-center justify-between">
 				<article className="w-full md:w-1/2 h-auto">
 					<div className="text-4xl md:text-6xl relative font-semibold pb-8 md:pb-12 flex flex-col gap-6">
@@ -31,7 +31,7 @@ const Hero = () => {
 				</article>
 				<article className="w-full md:w-1/2">
 					<p>Get to know the hidden you. Mirror reveals your true personality, exposing the unseen and unknown self. LOOK INTO THE MIRROR TODAY</p>
-					<div className="w-full mt-8 h-[300px] md:h-[400px] bg-slate-300">
+					<div className="w-full mt-8 h-[200px] md:h-[400px] bg-slate-300">
 						<img src={HeroImage} className="w-full h-full" alt="Hero Image" />
 					</div>
 				</article>

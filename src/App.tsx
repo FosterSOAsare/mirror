@@ -18,21 +18,21 @@ function App() {
 		<>
 			<Header />
 			<Hero />
-			<section className="w-full h-auto px-4 py-6 md:py-12">
+			<section className="w-full h-auto px-6 py-6 md:py-12">
 				<div className="w- flex flex-col gap-8 h max-w-6xl mx-auto ">
 					<article className="flex flex-col md:flex-row justify-between items-start gap-4 md:gap-8 h-auto">
-						<h3 className="w-full md:w-2/5 text-3xl md:text-[48px] md:leading-[60px] font-semibold">“Knowing yourself is the beginning of all wisdom”</h3>
+						<h3 className="w-full md:w-2/5 text-2xl md:text-[48px] md:leading-[60px] font-semibold">“Knowing yourself is the beginning of all wisdom”</h3>
 						<div className="w-full md:w-1/2">
 							<p className="text-lg leading-[35px]">
 								The only true journey is the journey within. The greatest discovery in life is self discovery, and until you find yourself, you will always be someone else. LOOK INTO
 								THE MIRROR TODAY
-								<span className="w-8 h-8 rounded-full flex items-center justify-center text-xl border-black border-[2px] mt-6">
+								<span className="w-8 h-8 rounded-full flex items-center justify-center text-[14px] md:text-xl border-black border-[2px] mt-6">
 									<ImArrowUpRight2 className="rotate-[180deg]" />
 								</span>
 							</p>
 						</div>
 					</article>
-					<article className="flex bg-slate-300 h-[200px] md:h-[400px] gap-12 items-center justify-between">
+					<article className="flex bg-slate-300 h-[150px] md:h-[400px] gap-12 items-center justify-between">
 						<img src={SelfImage} className="w-full h-full" alt="" />
 					</article>
 				</div>
@@ -43,9 +43,9 @@ function App() {
 
 			<section className="w-full h-auto px-4 py-6 md:py-12">
 				<div className="w-full h-auto max-w-6xl mx-auto ">
-					<h3 className="text-3xl md:text-[48px] md:leading-[60px] font-semibold w-full md:w-1/2">Hear From Our Altruist</h3>
+					<h3 className="text-2xl md:text-[48px] md:leading-[60px] font-semibold w-full md:w-1/2">Hear From Our Altruist</h3>
 					<div className="flex flex-col md:flex-row gap-8 md:gap-16 mt-8 justify-start h-auto items-stretch">
-						<article className="flex flex-col bg-slate-300  w-full md:w-[35%] h-[300px]">
+						<article className="flex flex-col bg-slate-300  w-full md:w-[35%] h-[250px] md:h-[300px]">
 							<img src={AltruistImage} className="w-full h-full" alt="" />
 						</article>
 						<article className="w-full md:w-1/2 h-full">

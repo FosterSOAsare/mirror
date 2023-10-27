@@ -18,11 +18,11 @@ const Footer = () => {
 				</nav>
 			</div>
 
-			<div className="w-full h-auto flex items-center justify-between mt-12 mx-auto max-w-5xl">
-				<p className="text-lg font-semibold">
+			<div className="w-full h-auto flex flex-col md:flex-row items-center justify-between mt-12 mx-auto max-w-5xl">
+				<p className="md:text-lg font-semibold">
 					Designed by <a href="">Sovi Joshua</a>
 				</p>
-				<p className="text-lg font-semibold">
+				<p className="md:text-lg font-semibold">
 					<span className="group ml-4">
 						<a target="_blank" rel="noreferrer" href="https://www.behance.net/joshuasovi" className="group-hover:underline">
 							https://www.behance.net/joshuasovi

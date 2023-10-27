@@ -18,7 +18,7 @@ const Advice = () => {
 			<div className="w-full flex flex-col md:flex-row gap-5  md:gap-12 h-auto max-w-6xl mx-auto ">
 				<article className="h-auto w-full md:w-1/2">
 					<h3 className="w-full text-3xl md:text-[48px] md:leading-[60px] font-semibold">Feed Your Inner Self Today. Look Into The MIRROR</h3>
-					<div className="w-full md:w-[90%] mt-12 bg-slate-300 h-[250px] gap-12 items-center justify-between">
+					<div className="w-full md:w-[90%] mt-12 bg-slate-300 h-[200px] gap-12 items-center justify-between">
 						<img src={FeedInnerSelfImage} className="w-full h-full" alt="" />
 					</div>
 				</article>

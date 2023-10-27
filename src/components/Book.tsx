@@ -38,8 +38,8 @@ const Book = () => {
 			toast.error("Please fill in all the provided fields", { autoClose: 1500 });
 			return;
 		}
-		toast.success("Appointment succesfully created", { autoClose: 1500 });
-
+		toast.success("Appointment succesfully booked", { autoClose: 1500 });
+		console.log(formData);
 		// Clear form data
 		setFormData({
 			birthmonth: "",
@@ -68,12 +68,12 @@ const Book = () => {
 						<article className="w-full md:w-1/2 h-full">
 							<p>You are confused about your personality, or it seems you are lost and you want to discover self. LOOK INTO THE MIRROR</p>
 
-							<form action="" className="mt-6">
+							<form action="" className="start mt-6">
 								<input
 									onChange={(e) => setFormData((prev) => ({ ...prev, birthmonth: e.target.value }))}
 									type="text"
 									value={formData?.birthmonth}
-									className="font-semibold w-full h-auto py-4 focus:outline-0 px-4 border-black border-[1px] mb-6"
+									className="font-semibold w-full h-auto py-4 focus:outline-0 px-4 border-black border-[1px] mb-4"
 									placeholder="Birth Month"
 								/>
 								<input
@@ -119,42 +119,67 @@ const Book = () => {
 							<p className="text-[18px]">Are you living in the shadows of self? We are here tp help you discover self. Book a session today and discover self</p>
 
 							<form action="" className="mt-6">
-								<input
-									type="text"
-									value={formData?.appointment?.name}
-									onChange={(e: any) => {
-										handleAppointmentFieldChange("name", e.target.value);
-									}}
-									className="font-semibold w-full h-auto py-4 focus:outline-0 px-4 border-black border-[1px] mb-6"
-									placeholder="Your Name"
-								/>
-								<input
-									type="text"
-									value={formData?.appointment?.date}
-									onChange={(e: any) => {
-										handleAppointmentFieldChange("date", e.target.value);
-									}}
-									className="font-semibold w-full h-auto py-4 focus:outline-0 px-4 border-black border-[1px] mb-8"
-									placeholder="Preferred Date"
-								/>
-								<input
-									type="text"
-									value={formData?.appointment?.time}
-									onChange={(e: any) => {
-										handleAppointmentFieldChange("time", e.target.value);
-									}}
-									className="font-semibold w-full h-auto py-4 focus:outline-0 px-4 border-black border-[1px] mb-6"
-									placeholder="Time"
-								/>
-								<input
-									type="text"
-									value={formData?.appointment?.mode}
-									onChange={(e: any) => {
-										handleAppointmentFieldChange("mode", e.target.value);
-									}}
-									className="font-semibold w-full h-auto py-4 focus:outline-0 px-4 border-black border-[1px] mb-8"
-									placeholder="Mode of Communication"
-								/>
+								<div>
+									<label htmlFor="name" className="mb-2 block font-medium">
+										Your Name
+									</label>
+									<input
+										type="text"
+										value={formData?.appointment?.name}
+										onChange={(e: any) => {
+											handleAppointmentFieldChange("name", e.target.value);
+										}}
+										className="font-semibold w-full h-auto py-4 focus:outline-0 px-4 border-black border-[1px] mb-4"
+										id="name"
+									/>
+								</div>
+								<div>
+									<label htmlFor="date" className="mb-2 block font-medium">
+										Preferred Date{" "}
+									</label>
+									<input
+										type="date"
+										id="date"
+										value={formData?.appointment?.date}
+										onChange={(e: any) => {
+											handleAppointmentFieldChange("date", e.target.value);
+										}}
+										className="changedplaceholder font-semibold w-full h-auto py-4 focus:outline-0 px-4 border-black border-[1px] mb-4"
+									/>
+								</div>
+								<div>
+									<label htmlFor="name" className="mb-2 block font-medium">
+										Time
+									</label>
+									<input
+										type="time"
+										id="time"
+										value={formData?.appointment?.time}
+										onChange={(e: any) => {
+											handleAppointmentFieldChange("time", e.target.value);
+										}}
+										className="changedplaceholder font-semibold w-full h-auto py-4 focus:outline-0 px-4 border-black border-[1px] mb-4"
+									/>
+								</div>
+								<div>
+									{" "}
+									<label htmlFor="mode" className="mb-2 block font-medium">
+										Mode of Communication
+									</label>
+									<select
+										id="mode"
+										value={formData?.appointment?.mode}
+										onChange={(e: any) => {
+											handleAppointmentFieldChange("mode", e.target.value);
+										}}
+										className="font-semibold w-full h-auto py-4 focus:outline-0 px-4 border-black border-[1px] mb-8">
+										<option value="" disabled>
+											Select mode{" "}
+										</option>
+										<option value="visit">Visit </option>
+										<option value="call">On Call</option>
+									</select>
+								</div>
 								<PrimaryButton handleClick={bookSession} text="Book a Session" sx="w-full md:w-auto text-[18px] font-semibold" />
 							</form>
 						</article>

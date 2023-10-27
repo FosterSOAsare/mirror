@@ -26,9 +26,9 @@ function App() {
 							<p className="text-lg leading-[35px]">
 								The only true journey is the journey within. The greatest discovery in life is self discovery, and until you find yourself, you will always be someone else. LOOK INTO
 								THE MIRROR TODAY
-								<div className="w-8 h-8 rounded-full flex items-center justify-center text-xl border-black border-[2px] mt-6">
+								<span className="w-8 h-8 rounded-full flex items-center justify-center text-xl border-black border-[2px] mt-6">
 									<ImArrowUpRight2 className="rotate-[180deg]" />
-								</div>
+								</span>
 							</p>
 						</div>
 					</article>

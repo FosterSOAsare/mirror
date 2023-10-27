@@ -7,7 +7,7 @@
 	@apply p-0 m-0 font-quicksand;
 }
 
-input::placeholder {
+.start input::placeholder {
 	color: black;
 	opacity: 0.8;
 }

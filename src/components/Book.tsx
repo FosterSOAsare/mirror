@@ -73,7 +73,7 @@ const Book = () => {
 									onChange={(e) => setFormData((prev) => ({ ...prev, birthmonth: e.target.value }))}
 									type="text"
 									value={formData?.birthmonth}
-									className="font-semibold w-full h-auto py-4 focus:outline-0 px-4 border-black border-[1px] mb-4"
+									className="font-semibold w-full h-auto py-4 focus:outline-0 px-4 border-black border-[1px] mb-6"
 									placeholder="Birth Month"
 								/>
 								<input

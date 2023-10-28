@@ -11,18 +11,18 @@ const Hero = () => {
 					<div className="text-4xl md:text-6xl relative font-semibold pb-8 md:pb-12 flex flex-col gap-6">
 						<div className="relative">
 							<h1 className="relative">MIRROR</h1>
-							<div className="w-8 h-8 absolute left-[42%] md:left-[45%] top-4 md:top-8  bottom-0 my-auto flex items-center justify-center">
+							<div className="w-8 h-8 absolute left-[150px] md:left-[45%] top-4 md:top-8  bottom-0 my-auto flex items-center justify-center">
 								<StarSvg />
 							</div>
 						</div>
 						<h1 className="text-right">Revealing Truth</h1>
 						<div className="relative">
 							<h1 className="relative">You & Self</h1>
-							<div className="w-8 h-8 absolute left-[54%] md:left-[60%] bottom-3 md:bottom-8 my-auto flex items-center justify-center">
+							<div className="w-8 h-8 absolute left-[190px] md:left-[60%] bottom-3 md:bottom-8 my-auto flex items-center justify-center">
 								<StarSvg />
 							</div>
 						</div>
-						<div className="w-8 h-8 absolute left-[25%] -bottom-4 md:-bottom-10 my-auto flex items-center justify-center">
+						<div className="w-8 h-8 absolute left-[100px] -bottom-4 md:-bottom-10 my-auto flex items-center justify-center">
 							<StarSvg />
 						</div>
 					</div>
